@@ -1,0 +1,19 @@
+﻿@model UsuarioModel
+
+
+<h1>Cadastrar</h1>
+<br/>
+
+<form method="post" asp-controller="Usuario" asp-action="Cadastrar">
+
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" asp-for="Name" name="Name" id="Name" placeholder="Digite o nome do usuário">
+    </div>
+
+    <div class="input-group mb-3">
+        <input type="date" class="form-control" asp-for="DataNascimento" name="DataNascimento" id="DataNascimento" placeholder="00/00/0000">
+    </div>
+
+    <button type="submit" class="btn btn-success">Cadastrar</button>
+
+</form>
